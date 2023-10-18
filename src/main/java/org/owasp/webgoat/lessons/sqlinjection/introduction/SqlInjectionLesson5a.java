@@ -55,7 +55,7 @@ public class SqlInjectionLesson5a extends AssignmentEndpoint {
       @RequestParam String account, @RequestParam String operator, @RequestParam String injection) {
     return injectableQuery(account + " " + operator + " " + injection);
   }
-
+/*
   protected AttackResult injectableQuery(String accountName) {
     String query = "";
     try (Connection connection = dataSource.getConnection()) {
@@ -99,7 +99,8 @@ public class SqlInjectionLesson5a extends AssignmentEndpoint {
           .build();
     }
   }
-
+*/
+    
   public static String writeTable(ResultSet results, ResultSetMetaData resultsMetaData)
       throws SQLException {
     int numColumns = resultsMetaData.getColumnCount();
